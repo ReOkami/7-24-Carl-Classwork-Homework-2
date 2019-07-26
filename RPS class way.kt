@@ -1,9 +1,16 @@
 import kotlin.random.Random
 fun main(){
+     val wantToPlayAgain = true
+    println("Welcome to my game")
+    while(wantToPlayAgain == true){
+        beginGame()
+        val userchoice: Int = readLine()?.toIntOrNull[]?
+        val aiChoice = Random.nextInt(1,3)
+        playGame(userchoice, aiChoice)
 
+    }
 }
-fun displayelcomemessage(){
-    println("welcome to my game")
+fun beginGame(){
     println("enter an integer from 1 - 3")
     println("1 = rock")
     println("2 = paper")
